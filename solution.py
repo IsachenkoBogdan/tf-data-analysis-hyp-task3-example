@@ -6,4 +6,4 @@ chat_id = 683820405 # Ваш chat ID, не меняйте название пе�
 
 def solution(x: np.array) -> bool: # Одна или две выборке на входе, заполняется исходя из условия
     alpha = 0.08
-    return ztest(x, value=300, alternative='larger')[1] < alpha
+    return ztest(x, value=300, alternative='smaller')[1] < alpha
